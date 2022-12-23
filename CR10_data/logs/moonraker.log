@@ -1,0 +1,156 @@
+--------------------Moonraker Log Start--------------------
+data_path: /home/sashi/CR10_data
+is_default_data_path: False
+config_file: /home/sashi/CR10_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+log_file: /home/sashi/CR10_data/logs/moonraker.log
+software_version: v0.7.1-780-gdde9bcc
+python_version: 3.9.2 (default, Feb 28 2021, 17:03:44)  [GCC 10.2.1 20210110]
+
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /home/sashi/CR10_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	http://*.lan
+	http://*.local
+	https://my.mainsail.xyz
+	http://my.mainsail.xyz
+	https://app.fluidd.xyz
+	http://app.fluidd.xyz
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager fluidd]
+type = web
+channel = stable
+repo = fluidd-core/fluidd
+path = ~/fluidd
+
+#################################################################
+All Configuration Files:
+/home/sashi/CR10_data/config/moonraker.conf
+#################################################################
+Unsafe Shutdown Count: 1
+
+System Info:
+
+***python***
+  version: sys.version_info(major=3, minor=9, micro=2, releaselevel='final', serial=0)
+  version_string: 3.9.2 (default, Feb 28 2021, 17:03:44)  [GCC 10.2.1 20210110]
+
+***cpu_info***
+  cpu_count: 2
+  bits: 64bit
+  processor: x86_64
+  cpu_desc: AMD GX-212JC SOC with Radeon(TM) R2E Graphics
+  serial_number: 
+  hardware_desc: 
+  model: 
+  total_memory: 3439328
+  memory_units: kB
+
+***sd_info***
+
+***distribution***
+  name: Debian GNU/Linux 11 (bullseye)
+  id: debian
+  version: 11
+  version_parts: {'major': '11', 'minor': '', 'build_number': ''}
+  like: 
+  codename: bullseye
+  release_info: {}
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+Systemd unit moonraker-CR10.service:
+unit_name: moonraker-CR10.service
+is_default: False
+Properties:
+**Requires=['network-online.target', '-.mount', 'sysinit.target', 'system.slice', 'home-sashi.mount']
+**After=['basic.target', 'sysinit.target', 'system.slice', 'network-online.target', 'systemd-journald.socket', 'home-sashi.mount', '-.mount']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/sashi/CR10_data/systemd/moonraker.env
+**ExecStart=/home/sashi/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/sashi/moonraker
+**FragmentPath=/etc/systemd/system/moonraker-CR10.service
+**Description=API Server for Klipper SV1 CR10
+**User=sashi
+
+Systemd unit klipper-CR10.service:
+unit_name: klipper-CR10.service
+is_default: False
+Properties:
+**Description=Klipper 3D Printer Firmware SV1
+**ExecStart=/home/sashi/klippy-env/bin/python $KLIPPER_ARGS
+**FragmentPath=/etc/systemd/system/klipper-CR10.service
+Klipper Version: v0.11.0-40-gaac613bf
+2022-12-22 02:41:59,984 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 02:42:09,999 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 13:23:51,052 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 13:24:01,068 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 14:02:25,236 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 14:02:35,259 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 15:00:51,669 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 15:01:51,757 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 15:25:14,282 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 15:25:34,311 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 15:32:14,999 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 15:32:25,015 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 15:46:26,552 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 15:46:36,576 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 16:36:52,052 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 16:37:12,085 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 16:43:02,716 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 16:43:22,747 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 16:49:03,333 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 16:49:13,353 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 16:55:04,042 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 16:55:14,055 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 16:58:32,516 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0x7fb7b6235ca0>, <Task finished name='Task-268323' coro=<_HTTPConnection.run() done, defined at /home/sashi/moonraker-env/lib/python3.9/site-packages/tornado/simple_httpclient.py:290> exception=gaierror(-3, 'Temporary failure in name resolution')>)
+Traceback (most recent call last):
+  File "/home/sashi/moonraker-env/lib/python3.9/site-packages/tornado/ioloop.py", line 740, in _run_callback
+    ret = callback()
+  File "/home/sashi/moonraker-env/lib/python3.9/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+  File "/home/sashi/moonraker-env/lib/python3.9/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+  File "/home/sashi/moonraker-env/lib/python3.9/site-packages/tornado/tcpclient.py", line 265, in connect
+    addrinfo = await self.resolver.resolve(host, port, af)
+  File "/home/sashi/moonraker-env/lib/python3.9/site-packages/tornado/netutil.py", line 433, in resolve
+    for fam, _, _, _, address in await asyncio.get_running_loop().getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution

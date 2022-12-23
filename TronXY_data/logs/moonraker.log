@@ -1,0 +1,139 @@
+--------------------Moonraker Log Start--------------------
+data_path: /home/sashi/TronXY_data
+is_default_data_path: False
+config_file: /home/sashi/TronXY_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+log_file: /home/sashi/TronXY_data/logs/moonraker.log
+software_version: v0.7.1-780-gdde9bcc
+python_version: 3.9.2 (default, Feb 28 2021, 17:03:44)  [GCC 10.2.1 20210110]
+
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7126
+klippy_uds_address = /home/sashi/TronXY_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	http://*.lan
+	http://*.local
+	https://my.mainsail.xyz
+	http://my.mainsail.xyz
+	https://app.fluidd.xyz
+	http://app.fluidd.xyz
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager fluidd]
+type = web
+channel = stable
+repo = fluidd-core/fluidd
+path = ~/fluidd
+
+#################################################################
+All Configuration Files:
+/home/sashi/TronXY_data/config/moonraker.conf
+#################################################################
+Unsafe Shutdown Count: 1
+
+System Info:
+
+***python***
+  version: sys.version_info(major=3, minor=9, micro=2, releaselevel='final', serial=0)
+  version_string: 3.9.2 (default, Feb 28 2021, 17:03:44)  [GCC 10.2.1 20210110]
+
+***cpu_info***
+  cpu_count: 2
+  bits: 64bit
+  processor: x86_64
+  cpu_desc: AMD GX-212JC SOC with Radeon(TM) R2E Graphics
+  serial_number: 
+  hardware_desc: 
+  model: 
+  total_memory: 3439328
+  memory_units: kB
+
+***sd_info***
+
+***distribution***
+  name: Debian GNU/Linux 11 (bullseye)
+  id: debian
+  version: 11
+  version_parts: {'major': '11', 'minor': '', 'build_number': ''}
+  like: 
+  codename: bullseye
+  release_info: {}
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+Systemd unit moonraker-TronXY.service:
+unit_name: moonraker-TronXY.service
+is_default: False
+Properties:
+**Requires=['system.slice', 'home-sashi.mount', 'network-online.target', '-.mount', 'sysinit.target']
+**After=['systemd-journald.socket', '-.mount', 'basic.target', 'sysinit.target', 'home-sashi.mount', 'system.slice', 'network-online.target']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/sashi/TronXY_data/systemd/moonraker.env
+**ExecStart=/home/sashi/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/sashi/moonraker
+**FragmentPath=/etc/systemd/system/moonraker-TronXY.service
+**Description=API Server for Klipper SV1 TronXY
+**User=sashi
+
+Systemd unit klipper-TronXY.service:
+unit_name: klipper-TronXY.service
+is_default: False
+Properties:
+**Description=Klipper 3D Printer Firmware SV1
+**ExecStart=/home/sashi/klippy-env/bin/python $KLIPPER_ARGS
+**FragmentPath=/etc/systemd/system/klipper-TronXY.service
+Klipper Version: v0.11.0-40-gaac613bf
+2022-12-22 02:42:00,249 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 02:42:10,265 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 12:17:12,902 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 12:17:22,924 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 12:48:56,233 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 12:49:06,247 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 13:23:49,826 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 13:24:09,850 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 14:02:23,992 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 14:02:34,006 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 15:00:50,079 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 15:01:50,210 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 15:25:22,749 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 15:25:32,769 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 15:32:13,453 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 15:32:23,473 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 15:46:24,874 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 15:46:34,889 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 16:37:00,105 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 16:37:10,124 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 16:43:10,722 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 16:43:20,737 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 16:55:11,939 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
+2022-12-22 16:55:21,960 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.6.5
