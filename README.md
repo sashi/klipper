@@ -1,7 +1,7 @@
 HP Thin Client T520 running CR10 & TronXY X5SA  
 Klipper Firmware  
 
-** CR10 **  
+**CR10**  
 Dragon Hotend  
 Omron Probe  
 Stealthburner with LDO 1.8 Stepper Motor  
@@ -14,7 +14,7 @@ SKR 1.3 with TMC2209
 Linear Rail on X  
 Stock POM wheels on Y/Z  
 
-** TronXY X5SA (2021) **   
+**TronXY X5SA (2021)**  
 Dragon Hotend  
 Stealthburner with LDO 1.8 Stepper (LDO-42STH20-1004ASH2)  
 Trinamic 1.8 Stepper Motors on X/Y (QSH4218-51-10-049)  
