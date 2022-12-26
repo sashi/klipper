@@ -1,7 +1,7 @@
 HP Thin Client T520 running CR10 & TronXY X5SA  
 Klipper Firmware  
 
-__CR10  
+##### CR10  
 Dragon Hotend  
 Omron Probe  
 Stealthburner with LDO 1.8 Stepper Motor  
