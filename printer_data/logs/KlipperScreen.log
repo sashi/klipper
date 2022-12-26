@@ -17002,3 +17002,11 @@ Git Version: v0.3.1-9-gb96adf5
 Git Version: v0.3.1-9-gb96adf5
 2022-12-26 11:01:41,932 [screen.py:main()] - KlipperScreen version: v0.3.1-9-gb96adf5
 2022-12-26 11:01:42,552 [screen.py:main()] - Failed to initialize Gtk
+--------------------KlipperScreen Log Start--------------------
+Git Version: v0.3.1-9-gb96adf5
+2022-12-26 11:37:36,265 [screen.py:main()] - KlipperScreen version: v0.3.1-9-gb96adf5
+2022-12-26 11:39:45,571 [screen.py:main()] - Failed to initialize Gtk
+--------------------KlipperScreen Log Start--------------------
+Git Version: v0.3.1-9-gb96adf5
+2022-12-26 11:44:14,226 [screen.py:main()] - KlipperScreen version: v0.3.1-9-gb96adf5
+2022-12-26 11:46:24,930 [screen.py:main()] - Failed to initialize Gtk
