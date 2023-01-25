@@ -10,9 +10,10 @@ Zyltech Frame Brace
 Printed X/Y belt tensioners  
 Y Stepper mount brace  
 Printed Z axis leadscrew holders  
-SKR 1.3 with TMC2209  
+MKS Robin Nano V3 with TMC2209  
 Linear Rail on X  
 Stock POM wheels on Y/Z  
+Klicky Pobe  
 
 **TronXY X5SA (2021)**  
 Dragon Hotend  
@@ -22,5 +23,5 @@ Stock TronXY Z Stepper Motors
 Meanwell 24V PSU  
 MKS SGEN-L 2.0 with TMC2209  
 Linear Rail on X/Y  
-Unklicky BFP Probe  
+Klicky Probe  
 Sexbolt for auto Z offset  
