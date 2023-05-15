@@ -28,18 +28,17 @@ cors_domains =
 [history]
 
 [update_manager]
-channel = dev
-refresh_interval = 168
-
-[update_manager fluidd]
-type = web
-channel = stable
-repo = fluidd-core/fluidd
-path = ~/fluidd
+enable_auto_refresh = True
 
 [update_manager mainsail]
 type = web
 channel = stable
 repo = mainsail-crew/mainsail
 path = ~/mainsail
+
+[update_manager fluidd]
+type = web
+channel = stable
+repo = fluidd-core/fluidd
+path = ~/fluidd
 
