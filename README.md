@@ -1,4 +1,4 @@
-HP Thin Client T520 running CR10 & TronXY X5SA  
+HP Thin Client T520 running CR10 & VZBot 330 (Coverted from TronXY X5SA)  
 Klipper Firmware  
 
 **CR10**  
@@ -15,13 +15,11 @@ Linear Rail on X
 Stock POM wheels on Y/Z  
 Klicky Pobe  
 
-**TronXY X5SA (2021)**  
-Dragon Hotend  
-Stealthburner with LDO 1.8 Stepper (LDO-42STH20-1004ASH2)  
-Trinamic 1.8 Stepper Motors on X/Y (QSH4218-51-10-049)  
-Stock TronXY Z Stepper Motors  
+**VZBot 330**  
+Rapido Hotend  
+HextrudORT with LDO 1.8 Stepper ()  
+E3D Motech 0.9 Stepper Motors on X/Y/Z (MT-1704HSM168RE)  
 Meanwell 24V PSU  
 MKS SGEN-L 2.0 with TMC2209  
-Linear Rail on X/Y  
 Klicky Probe  
 Sexbolt for auto Z offset  
