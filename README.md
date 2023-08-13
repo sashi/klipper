@@ -16,8 +16,8 @@ Stock POM wheels on Y/Z
 Klicky Pobe  
 
 **VZBot 330**  
-Rapido Hotend  
-HextrudORT with LDO 1.8 Stepper ()  
+Dragon HF with NF Crazy  
+HextrudORT with Moons NEMA14 1.8 Stepper  
 E3D Motech 0.9 Stepper Motors on X/Y/Z (MT-1704HSM168RE)  
 Meanwell 24V PSU  
 MKS SGEN-L 2.0 with TMC2209  
