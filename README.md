@@ -23,3 +23,4 @@ Meanwell 24V PSU
 MKS SGEN-L 2.0 with TMC2209  
 Klicky Probe  
 Sexbolt for auto Z offset  
+Umbilical Cord from Voron 0.1  
