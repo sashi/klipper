@@ -1,3 +1,8 @@
 [Variables]
+build_sheet 3d_hub_smooth_pei = {'name': '3D_Hub_Smooth_PEI', 'offset': 9.530}
+build_sheet fr4 = {'name': 'FR4', 'offset': 9.92}
+build_sheet glass = {'name': 'Glass', 'offset': 9.4}
+build_sheet installed = 'build_sheet 3d_hub_smooth_pei'
+build_sheet whambam = {'name': 'WhamBam', 'offset': 0}
 pressure_advance = [{'id': 'PLA', 'val': [{'nozzle': 0.4, 'pa': 0.036, 'st': 0.04}]}, {'id': 'ABS', 'val': [{'nozzle': 0.4, 'pa': 0.04, 'st': 0.045}]}, {'id': 'PETG', 'val': [{'nozzle': 0.4, 'pa': 0.042, 'st': 0.04}]}, {'id': 'ASA', 'val': [{'nozzle': 0.4, 'pa': 0.029, 'st': 0.04}]}]
 
